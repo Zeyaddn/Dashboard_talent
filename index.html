@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= LOADER ================= -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="assest/2.webp" alt="Logo">
+    </div>
+</div>
+
+<!-- ================= MAIN CONTAINER ================= -->
+<div class="container">
+    <div class="top-bar">
+
+        <!-- Title -->
+        <div class="title">Student Dashboard</div>
+
+        <!-- Dark Mode Toggle -->
+        <div class="toggle" onclick="toggleMode()">
+            <span id="icon">🌙</span>
+            <span id="modeText">Dark Mode</span>
+        </div>
+    </div>
+
+    <!-- ===== PROFILE SECTION ===== -->
+    <div class="profile">
+
+        <!-- Profile Image -->
+        <img src="assest/1.webp " loading="lazy" alt="Profile Picture">
+
+        <div class="profile-details">
+            <h2>Zeyad Elassad</h2>
+            <div class="bubbles-top">
+                <div class="bubble">Leader</div>
+                <div class="bubble">Social Media</div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item">ID: 2420424</div>
+                <div class="info-item">Role: Leader - Social Media</div>
+                <div class="info-item">Department: IT</div>
+                <div class="info-item group-section">Group: 2 | Section: 1</div>
+                <div class="info-item">Phone: 01022******</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ===== MEETINGS ===== -->
+    <div class="stats">
+        <div class="card">
+            <h4>Total Meetings</h4>
+            <p>10</p>
+        </div>
+
+        <div class="card">
+            <h4>Attended</h4>
+            <p>8</p>
+        </div>
+
+        <div class="card">
+            <h4>Absence</h4>
+            <p>2</p>
+        </div>
+
+        <div class="card">
+            <h4>State</h4>
+            <p>Active</p>
+        </div>
+    </div>
+
+
+    <!-- ===== TASKS SUMMARY ===== -->
+    <div class="summary">
+        <div class="box">
+            <h4>Total Tasks</h4>
+            <p>10</p>
+        </div>
+
+        <div class="box">
+            <h4>Completed</h4>
+            <p>7</p>
+        </div>
+
+        <div class="box">
+            <h4>Pending</h4>
+            <p>1</p>
+        </div>
+
+        <div class="box">
+            <h4>Not Done</h4>
+            <p>2</p>
+        </div>
+    </div>
+
+
+    <!-- ===== TASKS SECTION ===== -->
+    <div class="tasks">
+
+        <h3>Tasks Details</h3>
+
+        <!-- === DESKTOP TABLE === -->
+        <table class="desktop-table">
+
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Rate</th>
+                    <th>Meeting</th>
+                    <th>Attendance</th>
+                    <th>Bonus</th>
+                    <th>Status</th>
+                    <th>File</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>UI Design</td>
+                    <td>9/10</td>
+                    <td>✔</td>
+                    <td>Present</td>
+                    <td>+2</td>
+                    <td><span class="status done">Done</span></td>
+                    <td><button class="btn">View</button></td>
+                </tr>
+
+                <tr>
+                    <td>Backend API</td>
+                    <td>7/10</td>
+                    <td>✔</td>
+                    <td>Late</td>
+                    <td>0</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td><button class="btn">View</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <!-- === MOBILE CARDS === -->
+        <div class="mobile-cards">
+
+            <!-- Task Card -->
+            <div class="task-card">
+                <h4>UI Design</h4>
+                <p>Rate: 9/10</p>
+                <p>Meeting: ✔</p>
+                <p>Attendance: Present</p>
+                <p>Bonus: +2</p>
+                <span class="status done">Done</span>
+                <button class="btn">View</button>
+            </div>
+
+            <!-- Task Card -->
+            <div class="task-card">
+                <h4>Backend API</h4>
+                <p>Rate: 7/10</p>
+                <p>Meeting: ✔</p>
+                <p>Attendance: Late</p>
+                <p>Bonus: 0</p>
+                <span class="status pending">Pending</span>
+                <button class="btn">View</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
